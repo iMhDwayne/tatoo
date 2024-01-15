@@ -1,4 +1,190 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  @font-face {
+    font-family: "korean_calligraphy";
+    src: local(korean_calligraphy)
+      url(../assets/font/korean_calligraphy/Korean_Calligraphy.ttf)
+      format(truetype);
+  }
+}
+
+h1 {
+  font-size: rem;
+}
+body {
+  background-color: #3c3c3c;
+}
+
+.flex {
+  display: flex;
+}
+
+.limitCont {
+    max-width: 350px;
+width: 100%;
+margin: 0 auto;
+}
+
+.limit-size {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.head-top > figure {
+  line-height: 80px;
+  .flip {
+    transform: scaleX(-1);
+    rotate: 30deg;
+    margin-left: -20px;
+    margin-top: -5px;
+  }
+}
+
+header {
+  backdrop-filter: blur(50px);
+  width: 100%;
+}
+
+.head-top {
+    
+  height: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+    position: fixed;
+    top : 0;
+    width: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
+  justify-content: space-between;
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+}
+
+nav.mainMenu > ul {
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+}
+
+nav.mainMenu > ul > li a {
+  margin: 0 5px;
+  padding: 20px 20px;
+}
+
+nav.mainMenu li.boutton > a {
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-top: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-family: ;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainMenu > ul > li > a {
+    padding: 0 5px;
+  }
+}
+
+#burger {
+  display: none;
+}
+
+#burger img {
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  .mainMenu {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  div#banniere {
+    background-size: 100%;
+    h1{
+    font-size:2rem;
+top: ; }
+  }
+}
+
+div#banniere {
+    position: relative;
+  text-align: center;
+  background: url(../img/hand2.jpg) no-repeat top center;
+  background-size: contain;
+  margin: 0 auto;
+  height: 250px;
+  transition: all;
+  h1{position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    z-index: 500;
+  }
+}
+
+div#bienvenu {
+    margin: 0 auto;
+    text-align: center;
+    h3{padding: 30px 0 20px;
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+
+    a{padding-bottom: 20px;}
+}
+
+.equipe {
+    size: 100%;
+}
+
+#call {
+    p {
+        padding-left: 50px; 
+    padding-top: 50px; 
+margin-bottom: 100px;  }
+}
+
+#maya{
+    margin-top: 50px;
+    p{
+        text-align: left;
+        margin: 30px 15px;
+    }
+}
+
+main {
+    padding-top: 120px;
+}
+
+#grid {
+    font-size: 0.9rem;
+    padding-top: 50px;
+    figure {margin: 0 20px 75px 20px; }
+}
+
+.text {margin: 10px 0;}
+.right {text-align: right;}
+.left {text-align: left;
+margin-top: 50px;}
+
+.client img {
+    display: block;
 }
