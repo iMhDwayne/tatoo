@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 
     <title>a Propos</title>
 </head>
+
 <body>
     <header>
         <nav class="head-top flex limit-size">
@@ -28,7 +30,7 @@
             </ul>
 
             <button class="btn" id="btn">
-                
+
             </button>
 
         </nav>
@@ -36,14 +38,82 @@
 
     </header>
 
-    <main id="contact" class="flex limit-size">
+    <main id="contact" class="limit-size">
 
         <figure>
-            <img src="./assets/img/contact.jpg" alt="">
+            <img src="./assets/img/contact.jpg" alt="contact" height="100%" width="90%">
         </figure>
+        <div class="text marge">
+            <p>Vous avez des questions supplémentaires ou vous souhaitez obtenir plus de renseignements sur nos services
+                ? N'hésitez pas à nous contacter.</p>
+        </div>
 
-        <p>Vous avez des questions supplémentaires ou vous souhaitez obtenir plus de renseignements sur nos services ? N'hésitez pas à nous contacter.</p>
+
+
+        <div class="contact text marge limitCont">
+            <div>
+                <p>
+                    Remplissez simplement notre formulaire de contact, et nous nous ferons un plaisir de répondre à
+                    toutes
+                    vos interrogations. Vous trouverez également nos coordonnées, y compris l'adresse, le numéro de
+                    téléphone et l'adresse e-mail du salon, pour que vous puissiez nous joindre facilement.
+                </p>
+                <br>
+            </div>
+
+
+            <form class="form" action="./assets/php/formulaire.php" method="post">
+
+                <div>
+                    <label for="nom">Nom :</label>&emsp;&nbsp;
+                    <input type="text" id="nom" name="nom" required>
+
+                    
+
+                    <label for="prenom">Prénom :</label>&nbsp;
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <br>
+
+                <div class="tel">
+                    <label for="telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
+
+
+                </div>
+                <br> <label for="hour">à qu'elle heure souhaitez vous prendre rendez-vous:</label>
+                <input type="time" name="hour" id="hour" value="09:00" min="09:00" max="20:00" step="1800" required>
+                <small>Notre salon est ouvert de 9h a 20h.</small>
+
+                <input type="submit" value="Envoyer le formulaire" class="submit">
+            </form>
+
+
+
+        </div>
+
+        <div class="text marge limit-size">
+            Situé au cœur de la ville, voici les coordonnées pour prendre rendez-vous :
+            <br>
+            <br>
+            <a href="">Adresse : Rue des Artistes 123, Villeville, Paysland</a>
+            <br>
+            Numéro de téléphone : <a href="tel:+33780484245">+XX-XXXX-XXXX</a>
+
+            <br>
+            <a href="mailto:imam.formation01@gmail.Com">Adresse e-mail : info@mayanaink.com</a>
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4201.356843888168!2d45.100125731707166!3d-12.84779271816062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x220a0f438982e28b%3A0xb7e23df1a0dc5e35!2sFlow%20d%E2%80%99encre%20Tattoo!5e0!3m2!1sfr!2sfr!4v1705573079644!5m2!1sfr!2sfr"
+                width="80%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="marge"></iframe>
+
+        </div>
+
     </main>
-    
+
 </body>
+
 </html>

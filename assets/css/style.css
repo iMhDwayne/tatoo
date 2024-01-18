@@ -16,18 +16,28 @@ h1 {
   align-items: center;
 }
 
+.text {
+  text-align: center;
+}
+
 body {
   overflow: hidden scroll;
-  position: relative;
   background: url(../img/smoke-gif.gif) no-repeat fixed;
   background-size: cover;
 
 }
 
 
-.bloc {display: block;}
+.bloc {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.marge {
+  padding: 20px 0;
 }
 
 .limitCont {
@@ -42,6 +52,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 .head-top>figure {
   line-height: 80px;
 
@@ -55,26 +67,26 @@ body {
 }
 
 header {
-  height: 200px;
+  height: auto;
   width: auto;
-  object-position:initial;
+  object-position: initial;
   max-width: 100%;
+
   img.hand {
-object-position: center;
+    object-position: center;
     object-fit: cover;
-position:relative;
-max-width:100% ;
-width: 100%;
-height: 100%;
-    bottom: 0px;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
   }
 }
 
 header nav.head-top {
-  overflow:visible;
+  overflow: visible;
   justify-content: space-between;
   position: sticky;
-  position:-webkit-sticky;
+  position: -webkit-sticky;
   top: 0;
   height: 80px;
   width: 100%;
@@ -112,6 +124,7 @@ nav.head-top #btn {
   border: hidden;
   z-index: 55;
   display: none;
+
 }
 
 nav.head-top #btn .row {
@@ -120,6 +133,11 @@ nav.head-top #btn .row {
 }
 
 @media screen and (max-width: 1000px) {
+
+  nav.head-top {
+    position: -webkit-sticky;
+  }
+
   .head-top>ul>li>a {
     padding: 0 5px;
   }
@@ -133,31 +151,32 @@ nav.head-top #btn .row {
   nav.head-top #btn::before {
     content: "\2630";
     padding: 0 20px;
-
   }
 
   nav.head-top ul.menu {
     flex-direction: column;
     position: absolute;
+    right: 0;
     z-index: 50;
     height: 30vh;
-    top: 80px;
+    top: 0;
+    margin: auto;
     justify-content: center;
-    width: 30vh;
+    width: 25vh;
     text-align: center;
     transition: all .5s;
     background-color: rgba(30, 30, 30, 0.7);
     backdrop-filter: blur(20px);
-    margin: 0
-    ;
+    padding-top: 80px;
+
 
   }
 
   nav.head-top ul.menu li {
-    padding: 3px 0;
+    padding: 5px 0;
   }
 
-  nav.head-top ul.menu li:hover {
+  nav.head-top ul.menu a:hover {
     color: #111;
     background-color: rgb(60, 60, 60, 07);
 
@@ -222,19 +241,6 @@ div#bienvenu {
   }
 }
 
-.equipe {
-  size: 100%;
-}
-
-#call {
-  margin: ;
-  p {
-    padding-left: 50px;
-    padding-top: 50px;
-    margin-bottom: 100px;
-  }
-}
-
 #maya {
   margin-top: 50px;
 
@@ -244,8 +250,16 @@ div#bienvenu {
   }
 }
 
-main {
-  padding-top: 120px;
+
+
+
+/*  PAGE 1    */
+
+
+
+
+main.equipe {
+  margin-top: 50px
 }
 
 #grid {
@@ -256,6 +270,21 @@ main {
     margin: 0 20px 75px 20px;
   }
 }
+
+
+#call {
+  margin: ;
+
+  p {
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+
+main {}
+
 
 .right {
   text-align: right;
@@ -273,9 +302,7 @@ main {
 
 
 
-.equipe {
-  margin-top: -200px;
-}
+.equipe {}
 
 
 
@@ -283,16 +310,15 @@ main {
 
 /* PAGE 2 */
 
-main.equipe {
+main.equipe2 {
   text-align: center;
-  p{
+
+  p {
     justify-content: center;
-    margin-top: 50px;
-    width: 40%;
   }
 }
 
-main.equipe figure.image {
+main.equipe2 figure.image {
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -301,7 +327,7 @@ main.equipe figure.image {
   line-height: 300px;
 }
 
-main.equipe figure.image  img {  
+main.equipe2 figure.image img {
   flex: 1;
   object-fit: cover;
   height: 200px;
@@ -309,8 +335,105 @@ main.equipe figure.image  img {
   transition: transform 0.5s ease-in-out;
 }
 
-main.equipe figure.image  img:hover {
+main.equipe2 figure.image img:hover {
   height: 100%vh;
-  
+
   transform: scale(1.7);
 }
+
+
+
+/*  PAGE 3  */
+
+
+main#conseil {
+  text-align: center;
+
+  p {
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content:
+  }
+
+  figure {}
+}
+
+main#conseil>figure {
+  max-width: ;
+
+}
+
+
+
+/*  PAGE 4  */
+
+
+main#propos {
+  text-align: center;
+
+  p {
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content:
+  }
+
+
+  /*  PAGE 5  */
+
+
+  main#faq {
+    text-align: center;
+    align-items: center;
+
+    p {
+      align-items: center;
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .mask {
+      margin: 0 auto;
+    }
+
+  }
+
+
+
+
+  /*  PAGE 6  */
+
+
+  main#contact {
+    text-align: center;
+    align-items: center;
+
+    p {
+      align-items: center;
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .submit{
+      padding: 30px ;
+    }
+    form.formulaire {
+      color: #3c3c3c;
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    figure {
+      position: relative;
+    }
+    .formu {
+position: absolute;
+    }
+  }
+
+  main#contact form.form {
+    
+  };
