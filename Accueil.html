@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/1091ba8757.js" crossorigin="anonymous"></script>
     <title>MayanaInk'</title>
 </head>
 
 <body>
     <header>
-        <div class="head-top flex limit-size">
+        <nav class="head-top flex limit-size">
 
             <figure class="flex">
                 <a href="./Accueil.html"><img src="./assets/img/logo_tat1.png" alt="logo" height="80px"></a>
@@ -20,30 +19,31 @@
                 <img class=flip src="./assets/img/hand12.png" alt="hand logo" height="50px">
             </figure>
 
-            <nav class="mainMenu">
-                <ul>
-                    <li><a href="./page1.html">Présentation -Services</a></li>
-                    <li><a href="./page2.html">Réalisation - Galerie</a></li>
-                    <li><a href="">Soins et conseils</a></li>
-                    <li><a href="">à Propos</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li class="boutton"><a href="">Contact</a></li>
+            <ul class="menu flex">
+                <li><a href="./page1.html">Présentation</a></li>
+                <li><a href="./page2.html">Réalisation</a></li>
+                <li><a href="./page3.html">Soins et conseils</a></li>
+                <li><a href="./page4.html">à Propos</a></li>
+                <li><a href="./page5.html">FAQ</a></li>
+                <li class="boutton"><a href="./page6.html">Contact</a></li>
+            </ul>
 
+            <button class="btn" id="btn">
+                
+            </button>
 
-                </ul>
-            </nav>
+        </nav>
 
-            <div id="burger">
-                <img src="./assets/img/burger.png" alt="logo burger">
-            </div>
+            <img class="hand" src="./assets/img/hand2.jpg" alt="bannière">
 
-        </div>
         <div id="banniere">
             <h1>MayanaInk'</h1>
         </div>
-
+        <script src="./assets/js/tattoo.js" defer></script>
 
     </header>
+
+
     <main>
         <div id="bienvenu" class="limit-size">
             <h3>Bienvenue</h3>
@@ -56,8 +56,9 @@
 
             <a href="./page1.html">
                 <h3>Nos Tatoueurs</h3>
+
+                <figure><img class="equipe" src="./assets/img/equipe.jpg" alt="equipe" height="300px"></figure>
             </a>
-            <figure><img class="equipe" src="./assets/img/equipe.jpg" alt="equipe" height="300px"></figure>
 
             <h3>Suivez Nous ...</h3>
             <p class="limitCont">
