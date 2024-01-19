@@ -20,14 +20,16 @@
                 <img class=flip src="./assets/img/hand12.png" alt="hand logo" height="50px">
             </figure>
 
-            <ul class="menu flex">
-                <li><a href="./page1.html">Présentation</a></li>
-                <li><a href="./page2.html">Réalisation</a></li>
-                <li><a href="./page3.html">Soins et conseils</a></li>
-                <li><a href="./page4.html">à Propos</a></li>
-                <li><a href="./page5.html">FAQ</a></li>
-                <li class="boutton"><a href="./page6.html">Contact</a></li>
-            </ul>
+            <div class="navLinks flex">
+                <ul class="menu flex">
+                    <li><a href="./page1.html">Présentation</a></li>
+                    <li><a href="./page2.html">Réalisation</a></li>
+                    <li><a href="./page3.html">Soins et conseils</a></li>
+                    <li><a href="./page4.html">à Propos</a></li>
+                    <li><a href="./page5.html">FAQ</a></li>
+                    <li class="boutton"><a href="./page6.html">Contact</a></li>
+                </ul>
+            </div>
 
             <button class="btn" id="btn">
 
@@ -40,9 +42,6 @@
 
     <main id="contact" class="limit-size">
 
-        <figure>
-            <img src="./assets/img/contact.jpg" alt="contact" height="100%" width="90%">
-        </figure>
         <div class="text marge">
             <p>Vous avez des questions supplémentaires ou vous souhaitez obtenir plus de renseignements sur nos services
                 ? N'hésitez pas à nous contacter.</p>
@@ -50,53 +49,52 @@
 
 
 
-        <div class="contact text marge limitCont">
-            <div>
-                <p>
-                    Remplissez simplement notre formulaire de contact, et nous nous ferons un plaisir de répondre à
-                    toutes
-                    vos interrogations. Vous trouverez également nos coordonnées, y compris l'adresse, le numéro de
-                    téléphone et l'adresse e-mail du salon, pour que vous puissiez nous joindre facilement.
-                </p>
-                <br>
+        <section class="contact text flex marge ">
+
+            <figure>
+                <img src="./assets/img/contact.jpg" alt="contact" height="100%" width="100%">
+            </figure>
+
+            <div class="container">
+
+
+                
+                <div class="title">
+                    <p>
+                        Remplissez simplement notre formulaire de contact, et nous nous ferons un plaisir de répondre à
+                        toutes vos interrogations.
+                    </p>
+                    <br>
+                </div>
+
+              
+                <form class="flex form" action="./assets/php/formulaire.php" method="post">
+
+
+
+                    <input type="text" name="nom" placeholder="Entrer votre Nom/Prénom..." required>
+                    <input type="text" name="nom" placeholder="Entrer votre ..." required>
+                    <input type="email" name="email" placeholder="Votre email..." required>
+                    <input type="tel" name="number" placeholder="+33..." pattern="[0-9] {10}" required>
+                    <input type="time" name="hour" id="hour" value="09:00" min="09:00" max="20:00" step="1800" required>
+                    <small>Notre salon est ouvert de 9h a 20h.</small>
+                    <textarea name="message" placeholder="Entrer la description de votre futur tatouage..."></textarea>
+                    <button type="submit">Envoyer</button>
+
+                </form>
             </div>
 
 
-            <form class="form" action="./assets/php/formulaire.php" method="post">
+        </section>
 
-                <div>
-                    <label for="nom">Nom :</label>&emsp;&nbsp;
-                    <input type="text" id="nom" name="nom" required>
-
-                    
-
-                    <label for="prenom">Prénom :</label>&nbsp;
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
-
-                <br>
-
-                <div class="tel">
-                    <label for="telephone">Numéro de téléphone :</label>
-                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
-
-
-                </div>
-                <br> <label for="hour">à qu'elle heure souhaitez vous prendre rendez-vous:</label>
-                <input type="time" name="hour" id="hour" value="09:00" min="09:00" max="20:00" step="1800" required>
-                <small>Notre salon est ouvert de 9h a 20h.</small>
-
-                <input type="submit" value="Envoyer le formulaire" class="submit">
-            </form>
-
-
-
-        </div>
 
         <div class="text marge limit-size">
-            Situé au cœur de la ville, voici les coordonnées pour prendre rendez-vous :
-            <br>
-            <br>
+            <p>
+                Vous trouverez également nos coordonnées, y compris l'adresse, le numéro de téléphone et l'adresse
+                e-mail du salon, pour que vous puissiez nous joindre facilement.
+                Situé au cœur de la ville, voici les coordonnées pour prendre rendez-vous :
+            </p>
+
             <a href="">Adresse : Rue des Artistes 123, Villeville, Paysland</a>
             <br>
             Numéro de téléphone : <a href="tel:+33780484245">+XX-XXXX-XXXX</a>
